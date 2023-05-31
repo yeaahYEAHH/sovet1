@@ -5,12 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Загрузка шрифтов -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;700&family=Old+Standard+TT&display=swap"
-        rel="stylesheet">
     <!-- Загрузка стилей -->
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
@@ -23,18 +17,25 @@
 <body>
     <header>
         <div class="header">
-            <!-- Ссылки в хедере -->
-            <ul class="links-list">
-                <li><a href="index.html" class="links-list__item">Главная</a></li>
-                <li><a href="index.html#news" class="links-list__item">Новости</a></li>
-                <li><a href="board.html" class="links-list__item">Состав совета</a></li>
-                <li><a href="docs.html" class="links-list__item">Документы</a></li>
-            </ul>
+            <div class="header__menu menu">
+                <div class="menu_icon">
+                    <span></span>
+                </div>
+                <div class="menu__body">
+                    <ul class="menu__list">
+                        <li><a href="index.html" class="menu__link">Главная</a></li>
+                        <li><a href="#news" class="menu__link">Новости</a></li>
+                        <li><a href="board.html" class="menu__link">Состав совета</a></li>
+                        <li><a href="docs.html" class="menu__link">Документы</a></li>
+                    </ul>
+                </div>
+                <!-- Ссылки в хедере -->
+            </div>
             <img src="./images/logo.png" alt="Логотип союза." class="header__logo">
         </div>
     </header>
 
-    <main class="board ">
+    <main class="board">
         <!-- Основной контент -->
         <p class="docs">Документ ...</p> 
         <a href="#">ссылка</a>
@@ -48,13 +49,13 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <ul class="links-list links-list_footer-mod">
-                <li><a href="index.html" class="links-list__item">Главная</a></li>
-                <li><a href="index.html#news" class="links-list__item">Новости</a></li>
-                <li><a href="board.html" class="links-list__item">Состав совета</a></li>
-                <li><a href="docs.html" class="links-list__item">Документы</a></li>
+            <ul class="menu__list links-list_footer-mod">
+                <li><a href="index.html" class="menu__link">Главная</a></li>
+                <li><a href="index.html#news" class="menu__link">Новости</a></li>
+                <li><a href="board.html" class="menu__link">Состав совета</a></li>
+                <li><a href="docs.html" class="menu__link">Документы</a></li>
             </ul>
-
+    
             <div class="footer__block">
                 <h2 class="footer__heading">СОЦСЕТИ</h2>
                 <div class="footer__wrapper footer__wrapper_social">
@@ -68,11 +69,16 @@
                 <div class="footer__wrapper footer__wrapper_partners">
                     <img src="./images/Coat_of_arms_of_Yugra_Khanty-Mansia.png" alt="" class="footer__partners-image">
                     <img src="./images/logo.png" alt="" class="footer__partners-image">
-                    <img src="./images/New_Emblem_of_the_Ministry_of_Education_and_Science_of_Russia.png" alt="" class="footer__partners-image">
+                    <img src="./images/New_Emblem_of_the_Ministry_of_Education_and_Science_of_Russia.png" alt=""
+                        class="footer__partners-image">
                 </div>
             </div>
         </div>
     </footer>
-</body>
 
+    <script src="./script/script.js"></script>
+    <div class="btn-up round">
+        <span class="btn-up__arrow "></span>
+    </div>
+</body>
 </html>

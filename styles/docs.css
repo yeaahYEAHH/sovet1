@@ -2,3 +2,20 @@ body{
     background-image: none;
     background:  #f3f4f8;
 }
+
+main > *{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.board{
+    margin-bottom: 310px;
+}
+
+.docs{
+    padding: 20px;
+}
+
+.board > a{
+    text-decoration: underline;
+}

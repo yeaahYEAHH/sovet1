@@ -5,12 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Загрузка шрифтов -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;700&family=Old+Standard+TT&display=swap"
-        rel="stylesheet">
     <!-- Загрузка стилей -->
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
@@ -20,15 +14,30 @@
 
 <body>
     <header>
+        <div class="title__wrapper _bold">
+            <h4 class="title__heading">Совета директоров профессиональных <br>образовательных организаций
+                <br>Ханты-Мансийского
+                автономного округа – Югры
+            </h4>
+        </div>
+    
         <div class="header">
-            <!-- Ссылки в хедере -->
-            <ul class="links-list">
-                <li><a href="index.html" class="links-list__item">Главная</a></li>
-                <li><a href="index.html#news" class="links-list__item">Новости</a></li>
-                <li><a href="board.html" class="links-list__item">Состав совета</a></li>
-                <li><a href="docs.html" class="links-list__item">Документы</a></li>
-            </ul>
             <img src="./images/logo.png" alt="Логотип союза." class="header__logo">
+            <div class="header__menu menu">
+                <div class="menu_icon">
+                    <span></span>
+                </div>
+                <div class="menu__body">
+                    <ul class="menu__list">
+                        <li><a href="index.html" class="menu__link">Главная</a></li>
+                        <li><a href="./news.html#news" class="menu__link">Новости</a></li>
+                        <li><a href="board.html" class="menu__link">Состав совета</a></li>
+                        <li><a href="docs.html" class="menu__link">Документы</a></li>
+                    </ul>
+                </div>
+                <!-- Ссылки в хедере -->
+            </div>
+    
         </div>
     </header>
 
@@ -39,8 +48,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/chairman_photo.png" alt="" class="round" ></div>
                     <div>
-                        <h3 class="board-card__name">Сарабаров Алексей Борисович</h3>
-                        <h4 class="board-card__insert"> Председатель совета</h4>
+                        <h3 class="board-card__name _bold">Сарабаров Алексей Борисович</h3>
+                        <h4 class="board-card__insert _bold"> Председатель совета</h4>
                         <p class="board-card__description">АУ «Ханты-Мансийский технолого-педагогический колледж»<br> 
                             Сайт: <a href="https://hmtpk.ru/ru/">https://hmtpk.ru/ru/</a>  <br>
                             Email: <a href="mailto: info@hmtpk.ru"></a> info@hmtpk.ru<br>
@@ -50,8 +59,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/gaponchikova.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Гапончикова Лариса Валерьевна</h3>
-                        <h4 class="board-card__insert"> Секретарь</h4>
+                        <h3 class="board-card__name _bold">Гапончикова Лариса Валерьевна</h3>
+                        <h4 class="board-card__insert _bold"> Секретарь</h4>
                         <p class="board-card__description">БУ «Белоярский политехнический колледж» <br>
                             Сайт: <a href="https://bpkhmao.ru/">https://bpkhmao.ru/</a>  <br>
                             Email: <a href="mailto: btek@mail.ru"></a> btek@mail.ru<br>
@@ -61,8 +70,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/no_foto.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Адамович Михаил Людвигович</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name _bold">Адамович Михаил Людвигович</h3>
+                        <h4 class="board-card__insert _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Междуреченский агропромышленный колледж»  <br>
                             Сайт: <a href="https://magrakol.ru/">https://magrakol.ru/</a>  <br>
                             Email: <a href="mailto: mpu@list.ru"></a> mpu@list.ru<br>
@@ -72,8 +81,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/БОЛДЫРЕВА.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Болдырева Надежда Николаевна</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name _bold">Болдырева Надежда Николаевна</h3>
+                        <h4 class="board-card__insert _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Советский политехнический колледж» <br>
                             Сайт: <a href="http://www.sovprocollege.ru/">http://www.sovprocollege.ru/</a>  <br>
                             Email: <a href="mailto: sovpk@mail.ru"></a> sovpk@mail.ru<br>
@@ -83,8 +92,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"> <img src="images/directors/volkov-m-n.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Волков Михаил Николаевич</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name _bold">Волков Михаил Николаевич</h3>
+                        <h4 class="board-card__insert _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Радужнинский политехнический колледж»<br>
                             Сайт: <a href="http://рпк86.рф">http://рпк86.рф</a>  <br>
                             Email: <a href="mailto: rpk86rf@yandex.ru"></a> rpk86rf@yandex.ru<br>
@@ -94,8 +103,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/gestonina.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Гейстонина Людмила Геннадьевна</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name _bold">Гейстонина Людмила Геннадьевна</h3>
+                        <h4 class="board-card__insert _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Игримский политехнический колледж»<br>
                             Сайт: <a href="https://ipcollege.ru/">https://ipcollege.ru/</a>  <br>
                             Email: <a href="mailto:  ilitsey@mail.ru"></a>  ilitsey@mail.ru<br>
@@ -105,8 +114,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/Grebenets.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Гребенец Максим Витальевич </h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name _bold">Гребенец Максим Витальевич </h3>
+                        <h4 class="board-card__insert _bold"> Директор</h4>
                         <p class="board-card__description">АУ «Нефтеюганский политехнический колледж»<br>
                             Сайт: <a href="https://neftpk.ru/">https://neftpk.ru/</a>  <br>
                             Email: <a href="mailto: neftpk@neftpk.ru"></a> neftpk@neftpk.ru<br>
@@ -116,8 +125,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/pg_gureva.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Гурьева Светлана Леонидовна</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name _bold">Гурьева Светлана Леонидовна</h3>
+                        <h4 class="board-card__insert _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Нижневартовский социально-гуманитарный колледж»<br>
                             Сайт: <a href="https://nv-study.ru/">https://nv-study.ru/</a>  <br>
                             Email: <a href="mailto: priem@nv-study.ru"></a> priem@nv-study.ru<br>
@@ -127,8 +136,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/desyatov.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Десятов Александр Анатольевич</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name _bold">Десятов Александр Анатольевич</h3>
+                        <h4 class="board-card__insert _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Нижневартовский строительный колледж»<br>
                             Сайт: <a href="https://www.nskcollege.ru/">https://www.nskcollege.ru/</a>  <br>
                             Email: <a href="mailto: info@nskcollege.ru"></a> info@nskcollege.ru<br>
@@ -138,8 +147,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/eneva.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Енева Иоанна Георгиева</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name _bold">Енева Иоанна Георгиева</h3>
+                        <h4 class="board-card__insert _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Когалымский политехнический колледж»<br>
                             Сайт: <a href="http://kogpk.ru/">http://kogpk.ru/</a>  <br>
                             Email: <a href="mailto: priemnaya@kogpk.ru"></a> priemnaya@kogpk.ru<br>
@@ -147,10 +156,10 @@
                     </div>
                 </div>
                 <div class="board-card">
-                    <div class="board-card__photo"><img src="images/directors/Isupov.png" alt="" class="round"></div>
+                    <div class="board-card__photo "><img src="images/directors/Isupov.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Исупов Павел Владимирович</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name _bold">Исупов Павел Владимирович</h3>
+                        <h4 class="board-card__insert  _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Нижневартовский медицинский колледж»<br>
                             Сайт: <a href="https://mednv.ru/">https://mednv.ru/</a>  <br>
                             Email: <a href="mailto:mednv@list.ru"></a> mednv@list.ru<br>
@@ -160,8 +169,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/karmanov.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Карманов Сергей Владимирович</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name  _bold">Карманов Сергей Владимирович</h3>
+                        <h4 class="board-card__insert  _bold"> Директор</h4>
                         <p class="board-card__description"> БУ «Югорский политехнический колледж»<br>
                             Сайт: <a href="https://yugorskpk.ru/">https://yugorskpk.ru/</a>  <br>
                             Email: <a href="mailto: yupk@yugorskpk.ru"></a> yupk@yugorskpk.ru<br>
@@ -171,8 +180,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/Maximova.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Максимова Лилия Владимировна</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name  _bold">Максимова Лилия Владимировна</h3>
+                        <h4 class="board-card__insert  _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Лангепасский политехнический колледж»<br>
                             Сайт: <a href="https://collegelan.ru/">https://collegelan.ru/</a>  <br>
                             Email: <a href="mailto: college_lan@mail.ru "></a> college_lan@mail.ru <br>
@@ -182,8 +191,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/Mikhailova.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Михайлова Галина Валентиновна</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name  _bold">Михайлова Галина Валентиновна</h3>
+                        <h4 class="board-card__insert  _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Нижневартовский политехнический Колледж»<br>
                             Сайт: <a href="https://nv-pk.ru/">https://nv-pk.ru/</a>  <br>
                             Email: <a href="mailto:college@nv-pk.ru"></a>college@nv-pk.ru<br>
@@ -193,8 +202,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/nasyrova.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Насырова Елена Ивановна</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name  _bold">Насырова Елена Ивановна</h3>
+                        <h4 class="board-card__insert  _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Няганский технологический колледж»<br>
                             Сайт: <a href="http://nyagtk.ru/">http://nyagtk.ru/</a>  <br>
                             Email: <a href="mailto: npu13@bk.ru"></a>npu13@bk.ru<br>
@@ -204,8 +213,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/sevastyanova.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Севастьянова Алевтина Анатольевна</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name  _bold">Севастьянова Алевтина Анатольевна</h3>
+                        <h4 class="board-card__insert  _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Урайский политехнический колледж»<br>
                             Сайт: <a href="https://uraypc.ru/ru/">https://uraypc.ru/ru/</a>  <br>
                             Email: <a href="mailto: licey@pip.ru"></a> licey@pip.ru<br>
@@ -215,8 +224,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/stoyanchuk.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Стоянчук Юрий Михайлович</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name  _bold">Стоянчук Юрий Михайлович</h3>
+                        <h4 class="board-card__insert _bold"> Директор</h4>
                         <p class="board-card__description">БУ «Мегионский политехнический колледж»<br>
                             Сайт: <a href="http://www.megpk.ru/">http://www.megpk.ru/</a>  <br>
                             Email: <a href="mailto: StoyanchukYM@megpk.ru"></a> StoyanchukYM@megpk.ru<br>
@@ -226,8 +235,8 @@
                 <div class="board-card">
                     <div class="board-card__photo"><img src="images/directors/SHutov-V.N.png" alt="" class="round"></div>
                     <div>
-                        <h3 class="board-card__name">Шутов Вадим Николаевич</h3>
-                        <h4 class="board-card__insert"> Директор</h4>
+                        <h3 class="board-card__name _bold">Шутов Вадим Николаевич</h3>
+                        <h4 class="board-card__insert _bold"> Директор</h4>
                         <p class="board-card__description">АУ «Сургутский политехнический колледж<br>
                             Сайт: <a href="https://www.surpk.ru/">https://www.surpk.ru/</a>  <br>
                             Email: <a href="mailto: surpk@surpk.ru"></a> surpk@surpk.ru<br>
@@ -241,13 +250,13 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <ul class="links-list links-list_footer-mod">
-                <li><a href="index.html" class="links-list__item">Главная</a></li>
-                <li><a href="index.html#news" class="links-list__item">Новости</a></li>
-                <li><a href="board.html" class="links-list__item">Состав совета</a></li>
-                <li><a href="docs.html" class="links-list__item">Документы</a></li>
+            <ul class="menu__list links-list_footer-mod">
+                <li><a href="index.html" class="menu__link">Главная</a></li>
+                <li><a href="#news" class="menu__link">Новости</a></li>
+                <li><a href="board.html" class="menu__link">Состав совета</a></li>
+                <li><a href="docs.html" class="menu__link">Документы</a></li>
             </ul>
-
+    
             <div class="footer__block">
                 <h2 class="footer__heading">СОЦСЕТИ</h2>
                 <div class="footer__wrapper footer__wrapper_social">
@@ -261,11 +270,18 @@
                 <div class="footer__wrapper footer__wrapper_partners">
                     <img src="./images/Coat_of_arms_of_Yugra_Khanty-Mansia.png" alt="" class="footer__partners-image">
                     <img src="./images/logo.png" alt="" class="footer__partners-image">
-                    <img src="./images/New_Emblem_of_the_Ministry_of_Education_and_Science_of_Russia.png" alt="" class="footer__partners-image">
+                    <img src="./images/New_Emblem_of_the_Ministry_of_Education_and_Science_of_Russia.png" alt=""
+                        class="footer__partners-image">
                 </div>
             </div>
         </div>
     </footer>
-</body>
+    
 
+    <div class="btn-up round">
+        <span class="btn-up__arrow "></span>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
 </html>

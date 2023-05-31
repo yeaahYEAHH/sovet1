@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Загрузка стилей -->
+	<link rel="stylesheet" href="./styles/normalize.css">
+	<link rel="stylesheet" href="./styles/styles.css">
+	<!-- Название страницы. То, что написано на вкладке -->
+	<title>sovetHMAO</title>
+</head>
+
+<body>
+	<header>
+		<div class="title__wrapper _bold">
+			<h4 class="title__heading">Совета директоров профессиональных <br>образовательных организаций
+				<br>Ханты-Мансийского
+				автономного округа – Югры
+			</h4>
+		</div>
+	
+		<div class="header">
+			<img src="./images/logo.png" alt="Логотип союза." class="header__logo">
+			<div class="header__menu menu">
+				<div class="menu_icon">
+					<span></span>
+				</div>
+				<div class="menu__body">
+					<ul class="menu__list">
+						<li><a href="index.html" class="menu__link">Главная</a></li>
+						<li><a href="./news.html#news" class="menu__link">Новости</a></li>
+						<li><a href="board.html" class="menu__link">Состав совета</a></li>
+						<li><a href="docs.html" class="menu__link">Документы</a></li>
+					</ul>
+				</div>
+				<!-- Ссылки в хедере -->
+			</div>
+	
+		</div>
+	</header>
+
+	<main>
+		<section class="news" id="news">
+			<h2 class="news__heading_left">НОВОСТИ</h2>
+			<h2 class="news__heading_right">НОВОСТИ</h2>
+
+			<div class="news__container">
+				<!-- Карточка для новости -->
+				<div class="news-card news-card_margin_s">
+					<!-- Заголовок -->
+					<h3 class="news-card__title">заголовок</h3>
+					<div class="news-card__content">
+						<!-- Картинка к новости. Картинки хранить в папке: /images/news -->
+						<img src="./images/news/news1.png" alt="" class="news-card__image">
+						<div class="news-card__wrapper">
+							<!-- Дата публикации. Дату необходимо поменять в двух местах:
+															1 - у атрибута datetime в формате ГГГГ-ММ-ДД
+															2 - между угловыми скобками >DATE< в том формате, в котором будет отображаться на экране -->
+							<time class="news-card__date" datetime="2023-04-07">07.04.2023</time>
+							<!-- Описание новости -->
+							<p class="news-card__description">Первый Региональный этап Чемпионата по профессиональному
+								мастерству в Ханты-Мансийском автономном округе-Югре «Профессионалы» 2023 года завершен.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="news-card news-card_margin_m">
+					<!-- Заголовок -->
+					<h3 class="news-card__title">заголовок</h3>
+					<div class="news-card__content">
+						<div class="news-card__wrapper">
+							<!-- Дата публикации. Дату необходимо поменять в двух местах:
+															1 - у атрибута datetime в формате ГГГГ-ММ-ДД
+															2 - между угловыми скобками >DATE< в том формате, в котором будет отображаться на экране -->
+							<time class="news-card__date" datetime="2023-04-07">07.04.2023</time>
+							<!-- Описание новости -->
+							<p class="news-card__description">Первый Региональный этап Чемпионата по профессиональному
+								мастерству в Ханты-Мансийском автономном округе-Югре «Профессионалы» 2023 года завершен.
+							</p>
+						</div>
+						<!-- Картинка к новости. Картинки хранить в папке: /images/news -->
+						<img src="./images/news/news2.png" alt="" class="news-card__image">
+					</div>
+				</div>
+
+				<div class="news-card news-card_margin_l">
+					<!-- Заголовок -->
+					<h3 class="news-card__title">заголовок</h3>
+					<div class="news-card__content">
+						<!-- Картинка к новости. Картинки хранить в папке: /images/news -->
+						<img src="./images/news/news3.png" alt="" class="news-card__image">
+						<div class="news-card__wrapper">
+							<!-- Дата публикации. Дату необходимо поменять в двух местах:
+															1 - у атрибута datetime в формате ГГГГ-ММ-ДД
+															2 - между угловыми скобками >DATE< в том формате, в котором будет отображаться на экране -->
+							<time class="news-card__date" datetime="2023-04-07">07.04.2023</time>
+							<!-- Описание новости -->
+							<p class="news-card__description">Первый Региональный этап Чемпионата по профессиональному
+								мастерству в Ханты-Мансийском автономном округе-Югре «Профессионалы» 2023 года завершен.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<footer class="footer">
+		<div class="footer__container">
+			<ul class="menu__list links-list_footer-mod">
+				<li><a href="index.html" class="menu__link">Главная</a></li>
+				<li><a href="#news" class="menu__link">Новости</a></li>
+				<li><a href="board.html" class="menu__link">Состав совета</a></li>
+				<li><a href="docs.html" class="menu__link">Документы</a></li>
+			</ul>
+
+			<div class="footer__block">
+				<h2 class="footer__heading">СОЦСЕТИ</h2>
+				<div class="footer__wrapper footer__wrapper_social">
+					<div class="footer__social"></div>
+					<div class="footer__social"></div>
+					<div class="footer__social"></div>
+				</div>
+			</div>
+			<div class="footer__block">
+				<h2 class="footer__heading">ПАРТНЕРЫ</h2>
+				<div class="footer__wrapper footer__wrapper_partners">
+					<img src="./images/Coat_of_arms_of_Yugra_Khanty-Mansia.png" alt="" class="footer__partners-image">
+					<img src="./images/logo.png" alt="" class="footer__partners-image">
+					<img src="./images/New_Emblem_of_the_Ministry_of_Education_and_Science_of_Russia.png" alt=""
+						class="footer__partners-image">
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+		
+	<div class="btn-up round">
+		<span class="btn-up__arrow "></span>
+	</div>
+	
+	<script src="./script/script.js"></script>
+</body>
+</html>
