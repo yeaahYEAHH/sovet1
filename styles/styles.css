@@ -139,7 +139,6 @@ header{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   z-index: -1;
 }
 
@@ -176,7 +175,6 @@ header{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .news-card__content {
@@ -438,12 +436,6 @@ header{
 
 .modal__content > 
 .board-card > 
-.board-card__text{
-
-}
-
-.modal__content > 
-.board-card > 
 .board-card__text > *{
   flex: 0 1 100%;
 }
@@ -517,7 +509,6 @@ header{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .footer__wrapper {
