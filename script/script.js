@@ -16,16 +16,14 @@ const burherMenu = {
 	menuBody: document.querySelector('.menu__body'),
 	listMenu: document.querySelectorAll('.menu__link'),
 	addEventListener(){
-		if (this.iconMenu) {
-			this.iconMenu.addEventListener('click', () => {
-				toggle(this.iconMenu, this.menuBody);
-				this.iconMenu.style.position = 'fixed';
+		this.iconMenu.addEventListener('click', () => {
+			toggle(this.iconMenu, this.menuBody);
+			this.iconMenu.style.position = 'fixed';
 
-				if (this.iconMenu.style.position == 'fixed'){
-					this.iconMenu.style.position = 'relative';
-				}
-			})
-		}
+			if (this.iconMenu.style.position == 'fixed'){
+				this.iconMenu.style.position = 'relative';
+			}
+		})
 	// Закрытие Бургер меню при нажатии на ссылки в шапке
 		this.listMenu.forEach((item) => {
 			item.addEventListener('click', () => {
@@ -90,6 +88,56 @@ const modalBlock = {
 	}
 }
 
-modalBlock.addEventListener()
-btnUp.addEventListener();
-burherMenu.addEventListener();
+document.addEventListener('DOMContentLoaded', () => {
+	modalBlock.addEventListener();
+	btnUp.addEventListener();
+	burherMenu.addEventListener();
+	if (document.querySelector('.news__slider')){
+		
+		//Слайдер
+		const sliderBlock = {
+			items: document.querySelectorAll('.news__slider .news__container .news-card'),
+			sliderLine: document.querySelector('.news__container'),
+			images: document.querySelectorAll('.news__slider .news__container .news-card .news-card__content img'),
+			count: 0,
+			width: document.querySelector('.news__slider').offsetWidth,
+			init() {
+				this.sliderLine.style.width = this.width * this.items.length + 'px';
+				this.items.forEach((item) => {
+					item.style.width = this.width + 'px';
+				})
+				if (window.screen.width <= 320) {
+					this.images.forEach((item) => {
+						item.style.width = this.width + 'px';
+					})
+				}
+				this.sliderLine.style.transform = `translate(-${this.count * this.width}px)`
+			},
+
+			next() {
+				document.querySelector('.btn__next').addEventListener('click', () => {
+					this.count++
+					if (this.count >= this.items.length) { this.count = 0 }
+					this.sliderLine.style.transform = `translate(-${this.count * this.width}px)`
+				})
+			},
+
+			prev() {
+				document.querySelector('.btn__prev').addEventListener('click', () => {
+					this.count--
+					if (this.count < 0) { this.count = this.items.length - 1 }
+					this.sliderLine.style.transform = `translate(-${count * width}px)`
+				})
+			},
+
+			addEventListener() {
+				this.next()
+				this.prev()
+			}
+		}
+
+		sliderBlock.addEventListener();
+		sliderBlock.init()
+		window.addEventListener('resize', sliderBlock.init())
+	}
+})
