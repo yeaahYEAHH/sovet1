@@ -121,7 +121,6 @@ header{
 
 
 /*----------------------(Новости)-----------------------------*/
-
 .news {
   position: relative;
   margin: 0 auto 240px;
@@ -129,7 +128,7 @@ header{
   padding: 10px;
 }
 
-.news__heading_left, 
+.news__heading_left,
 .news__heading_right {
   position: absolute;
   top: 50%;
@@ -156,7 +155,7 @@ header{
   line-height: 79px;
 }
 
-.news__container{
+.news__container {
 
   padding: 0px 90px 0px 230px;
 }
@@ -204,76 +203,106 @@ header{
   color: rgba(0, 0, 0, 0.62);
 }
 
-/*----------------------(Новости в блоке news__slider)-----------------------------*/
-#news{
-  margin: 0px auto 100px;
-  max-width: 900px;
+
+/*----------------------(слайдер)-----------------------------*/
+#news {
+  position: relative;
+  margin: 0 auto 140px;
+  max-width: 1400px;
+  padding: 10px;
 }
 
 #news > .news__heading_left{
+  text-align: center;
+  line-height: normal;
+  font-size: 60px;
   position: relative;
   writing-mode: horizontal-tb;
   transform: none;
-  font-size: 60px;
-  line-height: normal;
+  padding: 20px 0px;
+}
+
+.news__slider {
+  max-width: 1180px;
+  overflow: hidden;
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.news__slider .news__container {
+  display: flex;
+  padding: 0;
+  transition: all .5s;
+  gap: 4px;
+}
+
+.news__slider>.news__container> .news-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 5px;
+}
+
+.news__slider>.news__container> .news-card:not(:last-child) {
+  margin: 0;
+}
+
+.news__slider>.news__container> .news-card>.news-card__title {
   text-align: center;
 }
 
-.news__slider{
-  position: relative;
-  max-width: 80%;
-  margin: 0 auto;
-  overflow: hidden;
+.news__slider>.news__container>.news-card> .news-card__content {
+  display: flex;
+  justify-content: center;
 }
 
-.news__slider > .news__container{
-  padding: 0;
-  display: flex;  
-  transition: all ease .7s;
+.news__slider>.news__container>.news-card> .news-card__content>img {
+  width: 270px;
+  height: 180px;
 }
 
-.news__slider > 
-.news__container > .news-card{
-  padding: 20px;
-  margin: 0;
-}
- 
-.news__slider>.news__container>.news-card> 
-.news-card__title{
-  font-size: 45px;
+.news__slider>.news__container>.news-card> .news-card__content>.news-card__wrapper {
+  width: 100%;
 }
 
-.btn__prev, .btn__next{
+.news__slider>.news__container>.news-card> .news-card__content>.news-card__wrapper>*:not(:last-child) {
+  margin: 10px 0px 10px;
+}
+
+.news__slider > .news__container > .news-card > .news-card__content > .news-card__wrapper
+> .news-card__description {
+  padding: 0px 10px 10px;
+  line-height: normal;
+}
+
+.arrow__next,
+.arrow__prev {
   position: absolute;
-  top: 50%;
-  border: 2px solid rgba(32, 39, 77, 0.77);
-  z-index: 5 ;
-  width: 70px;
-  height: 70px;
-  border-bottom: none;
-  border-right: none;
   cursor: pointer;
-  transition: .3s all;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #aaaaaa;
+  border-bottom: none;
+  border-left: none;
+  z-index: 5;
+  transform: translateY(-50%);
+  transition: all ease .3s;
 }
 
-.btn__next:hover{
-  border-color: black;
-  margin-right: -10px;
+.arrow__next:hover,
+.arrow__prev:hover {
+  border-color: #000000;
 }
 
-.btn__prev:hover{
-  border-color: black;
-  margin-left: -10px;
+.arrow__next {
+  transform: rotate(45deg);
+  right: 10px;
 }
 
-.btn__prev{
-  transform: rotate(-45deg);
-  left: 20px;
-}
-
-.btn__next{
-  transform: rotate(136deg);
-  right: 20px;
+.arrow__prev {
+  transform: rotate(-136deg);
+  left: 10px;
 }
 
 /*----------------------(Состав)-----------------------------*/
@@ -347,6 +376,16 @@ header{
   text-align: start;
   color: rgba(0, 0, 0, 0.59);
   padding: 10px 0px 0px 18px;
+}
+
+.board-card__description > a{
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.board-card__description> a:hover{
+  text-decoration: underline;
+  color: #000;
 }
 
 /*----------------------(Модальное окно)-----------------------------*/
@@ -600,12 +639,6 @@ header{
   .btn-up {
     right: 20px;
   }
-
-  .news__slider>
-  .news__container>
-  .news-card>.news-card__title {
-    text-align: center;
-  }
 }
 
 @media (max-width: 900px) {
@@ -736,20 +769,6 @@ header{
     padding: 0;
   }
 
-  .news-card__content>*:not(.news-card__image) {
-    flex: 0 1 100%;
-  }
-
-  .news__slider>.news__container>.news-card {
-    background: transparent;
-  }
-
-  .btn__prev,
-  .btn__next {
-    width: 40px;
-    height: 40px;
-  }
-
   .footer__container {
     flex-wrap: wrap;
   }
@@ -772,12 +791,6 @@ header{
   .board-card__description {
     font-size: 18px;
   }
-
-  .btn__prev,
-  .btn__next {
-    width: 20px;
-    height: 20px;
-  }
 }
 
 @media (max-width: 320px) {
@@ -792,17 +805,6 @@ header{
   .board {
     padding: 0;
   }
-
-  .news__slider>.news__container>.news-card>.news-card__content>.news-card__wrapper>.news-card__description {
-    padding: 5px;
-    font-size: 21px;
-  }
-
-  .news__slider>.news__container>.news-card>.news-card__content>.news-card__wrapper>.news-card__date {
-    text-align: center;
-  }
-
-
 
   .footer__block {
     flex-wrap: wrap;
@@ -819,3 +821,5 @@ header{
     flex-direction: row;
   }
 }
+
+
