@@ -49,9 +49,7 @@ function init(){
 	setInterval(next, 5000, returnWidthCount[1], newsContainer, newsContent, width)
 }
 
-window.addEventListener('resize', function () {
-	init()
-})
+window.addEventListener('resize', init)
 
 document.addEventListener('DOMContentLoaded', function () {
 	init()

@@ -168,8 +168,7 @@ header{
 
 .news-card__title {
   font-family: "Old Standard TT";
-  font-size: 64px;
-  line-height: 79px;
+  font-size: 40px;
   background: linear-gradient(92deg, rgba(24, 47, 91, 0.6) 10.89%, rgba(44, 115, 137, 0.5) 53.22%, rgba(59, 167, 182, 0.1) 110.5%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -179,6 +178,7 @@ header{
 .news-card__content {
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .news-card__image {
@@ -186,7 +186,7 @@ header{
 }
 
 .news-card__wrapper {
-  width: 380px;
+  max-width: 400px;
 }
 
 .news-card__description {
@@ -248,6 +248,7 @@ header{
 }
 
 .news__slider>.news__container> .news-card>.news-card__title {
+  font-size: 30px;
   text-align: center;
 }
 
@@ -753,7 +754,7 @@ header{
   }
 
   .news-card__title {
-    font-size: 48px;
+    font-size: 30px;
   }
 
   .news-card__date {
